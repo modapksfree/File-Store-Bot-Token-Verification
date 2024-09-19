@@ -126,8 +126,8 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("Baka! Files will be deleted After 300 seconds. Save them to the Saved Message now!")
-            await asyncio.sleep(300)
+            SD = await message.reply_text(" ⚠ ʙʀᴏ!! ꜰɪʟᴇꜱ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 1 ᴍɪɴᴜᴛᴇ ꜱᴏ ꜱᴀᴠᴇ ɪᴛ ᴏɴ ɢᴀʟʟᴇʀʏ ᴏʀ ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴏɴ ꜱᴀᴠᴇᴅ ᴍᴇꜱꜱᴀɢᴇꜱ!")
+            await asyncio.sleep(60)
 
             for snt_msg in snt_msgs:
                 try:
@@ -139,7 +139,7 @@ async def start_command(client: Client, message: Message):
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
                 [[InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                  InlineKeyboardButton('🍁 sᴇʀɪᴇsғʟɪx', url='https://t.me/Team_Netflix/40')]]
+                  InlineKeyboardButton("🍁 ᴄʟᴏsᴇ", callback_data="close")]]
             )
             await message.reply_text(
                 text=START_MSG.format(
